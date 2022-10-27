@@ -1,6 +1,11 @@
-function a() {
-    console.log('test2')
+'use strict'
+
+function test(a,b){
+    let c
+    b = b+1
+    c = a+b
+return c
 }
 
-a = 10
-console.log(a)
+let read = test(10,2)
+console.log(read)
