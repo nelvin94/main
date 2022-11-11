@@ -67,3 +67,22 @@ const defaulttest = (a, b = 1, c = 3) => {
 console.log(defaulttest (1, 2, 4))
 console.log(defaulttest (1, 2))
 */
+
+const myArray = [1, true, 'dima']
+//console.table(myArray)
+console.log(myArray)
+//console.log(myArray.length)
+
+const myArray2 = [1, true, 'dima']
+console.log(myArray2)
+
+console.log(myArray === myArray2)
+myArray2.length = 2
+//console.log(myArray2.length + 1)
+//myArray2[myArray2.length + 1] = 'test3'
+myArray2[2] = 'test3'
+//console.table(myArray2)
+//console.log(myArray2.length)
+myArray2.push('test4')
+myArray2.push('test5',6)
+console.table(myArray2)
