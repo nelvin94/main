@@ -66,7 +66,7 @@ const defaulttest = (a, b = 1, c = 3) => {
 }
 console.log(defaulttest (1, 2, 4))
 console.log(defaulttest (1, 2))
-*/
+
 
 const myArray = [1, true, 'dima']
 //console.table(myArray)
@@ -85,4 +85,38 @@ myArray2[2] = 'test3'
 //console.log(myArray2.length)
 myArray2.push('test4')
 myArray2.push('test5',6)
-console.table(myArray2)
+console.table(myArray2)*/
+
+
+
+const object = {
+    name: 'Dima',
+    age: 18,
+    city: 'Irpen'
+}
+
+console.log(object.name)
+object.name = 'Sashko'
+let {name, age} = object
+console.log(name)
+
+const massiv = [
+    'Dima',
+    18,
+    'Irpen'
+]
+console.log(massiv)
+const [imya, vozrast] = massiv
+console.log(imya)
+
+const fun = ([im2, voz2]) => {
+return `${im2} ${voz2} let`
+}
+
+console.log(fun(massiv))
+
+const fun2 = ({name, age}) => {
+    return `${name} ${age} let`
+    }
+    
+    console.log(fun2(object))
